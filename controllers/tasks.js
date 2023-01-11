@@ -4,7 +4,7 @@ const getAllTasks = (req, res) => {
 
 const createTask = (req, res) => {
     res.json(req.body);
-    // console.log('hello');
+    console.log('hello');
 }
 
 const getTask = (req, res) => {
