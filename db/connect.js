@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// Second obj argument will remove deprecation warnings
+
 // mongoose.connect(connetionString,{
 //     useNewUrlParser: true,
 //     useCreateIndex:true,
@@ -17,6 +17,7 @@ const mongoose = require('mongoose');
 // need to refactor a bit as below
 
 const connectDB = (url) => {
+    // Second obj argument will remove deprecation warnings
     return mongoose.connect(url,{
         useNewUrlParser: true,
         useCreateIndex:true,

@@ -10,6 +10,7 @@ app.use(express.json()); // Need to use this to get data in req.body
 
 app.use('/api/v1/tasks', tasks);
 
+//  DB connectin and App server
 const start = async () => {
     try {
         await connectDB(process.env.MONGO_URI)
