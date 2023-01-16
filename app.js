@@ -5,6 +5,7 @@ const connectDB = require('./db/connect');
 require('dotenv').config();
 const port = 3000;
 
+app.use(express.static('./public'));
 // Middleware
 app.use(express.json()); // Need to use this to get data in req.body 
 
